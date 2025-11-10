@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>VOLCANOCRAFT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 🎨 Здесь можно менять цвета всего сайта */
+        :root {
+            --text-color: red;            /* Колір тексту */
+            --border-color: red;          /* Колір рамок */
+            --frame-bg: rgba(254,195,12,0.9); /* Фон рамок */
+            --title-color: orange;        /* Колір назви VolcanoCraft */
+            --button-bg: rgba(254,195,12,0.9); /* Фон кнопки */
+            --button-hover-bg: rgba(255,134,1,1); /* Фон кнопки при наведенні */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('ee2.png.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+        }
+
+        header img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        header h1 {
+            font-size: 6em;
+            font-weight: 900;
+            color: var(--title-color);
+            -webkit-text-stroke: 2px var(--border-color);
+            text-shadow: -2px -2px 0 var(--border-color), 2px -2px 0 var(--border-color),
+            -2px 2px 0 var(--border-color), 5px 5px 0 var(--border-color);
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+
+        header p {
+            color: var(--text-color);
+            font-size: 1.8em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        /* Загальні стилі для рамок */
+        .frame {
+            background: var(--frame-bg);
+            border-radius: 50px;
+            padding: 40px;
+            overflow: auto;
+            color: var(--text-color);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .frame-left {
+            width: 700px;
+            height: 400px;
+            border: 8px solid var(--border-color);
+            margin-top: 120px;
+            left: 30px;
+        }
+
+        .frame-news {
+            width: 600px;
+            height: 250px;
+            border-radius: 25px;
+            padding: 30px;
+            border: 8px solid var(--border-color);
+            left: 30px;
+        }
+
+        .frame-button {
+            width: 450px;
+            height: 150px;
+            border-radius: 30px;
+            padding: 30px;
+            background: var(--button-bg);
+            color: var(--text-color);
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 30px;
+            position: relative;
+            left: 30px;
+            border: 8px solid var(--border-color);
+        }
+
+        .frame-button:hover {
+            background: var(--button-hover-bg);
+            cursor: pointer;
+        }
+
+        .content h2, .content p {
+            margin: 1px 0;
+        }
+
+        /* Верхняя рамка справа */
+        .frame-right-top {
+            position: absolute;
+            top: 475px;
+            left: 950px;
+            width: 650px;
+            height: 400px;
+            background: var(--frame-bg);
+            border-radius: 50px;
+            padding: 10px;
+            border: 8px solid var(--border-color);
+        }
+
+        /* Нижняя рамка справа */
+        .frame-right-bottom {
+            position: absolute;
+            top: 1000px;
+            left: 850px;
+            width: 750px;
+            height: 485px;
+            background: var(--frame-bg);
+            border-radius: 150px;
+            padding: 10px;
+            border: 8px solid var(--border-color);
+        }
+
+        /* НОВА рамка */
+        .frame-extra {
+            position: absolute;
+            top: 1650px;
+            left: 50px;
+            width: 1500px;
+            height: 200px;
+            background: var(--frame-bg);
+            border-radius: 50px;
+            padding: 20px;
+            border: 8px solid var(--border-color);
+        }
+
+        /* Добавим отступ между заголовком и абзацем */
+        .news-description {
+            margin-top: 100px; /* Отступ сверху */
+        }
+
+        /* Медиазапросы для адаптивности */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 3em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            .frame-left, .frame-news, .frame-right-top, .frame-right-bottom, .frame-extra {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            .news-description {
+                margin-top: 20px;
+            }
+
+            .frame-button {
+                width: 90%;
+                height: auto;
+                margin: 20px auto;
+            }
+
+            .frame-right-top, .frame-right-bottom {
+                position: relative;
+                margin-top: 20px;
+            }
+
+            .frame-extra {
+                position: relative;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="ttt.jpg">
+    <h1>VOLCANOCRAFT</h1>
+    <p>Добро пожаловать на сайт сервера!</p>
+</header>
+
+<!-- 1. Опис сервера -->
+<div class="frame frame-left">
+    <div class="content">
+        <h2>Описання сервера</h2>
+        <p>VolcanoCraft это мир майнкрафт что полон аномально страшными погодными условиями...</p>
+    </div>
+</div>
+
+<!-- 2. Новини -->
+<div class="frame frame-news">
+    <div class="content">
+        <h2>О новостном канале:</h2>
+        <p class="news-description">Так же у нас существует новостной сайт, где публикуются все новости, что происходят на вулкане. Такие как: Жизнь игроков, гриферство, победители в ивентах/квестах и многое другое!✨💫</p>
+        <p>Переходите сюда (ссылка), чтобы быть всегда в курсе последних новостей на вулкане!📰😱</p>
+    </div>
+</div>
+
+<!-- 3. Нажимна кнопка -->
+<a href="site.html" target="_blank" class="frame-button">
+    <div class="content">
+        <h2>Правила сервера</h2>
+        <p>Натисни сюди, щоб відкрити сторінку з правилами або додатковим контентом.</p>
+    </div>
+</a>
+
+<!-- 4. Верхняя рамка справа -->
+<div class="frame frame-right-top">
+    <div class="content">
+        <img src="photo1.jpg" alt="Фото 1" class="photo-frame">
+    </div>
+</div>
+
+<!-- 5. Нижняя рамка справа -->
+<div class="frame frame-right-bottom">
+    <div class="content">
+        <img src="photo2.png" alt="Фото 2" class="photo-frame">
+    </div>
+</div>
+
+<!-- 6. НОВА рамка -->
+<div class="frame frame-extra">
+    <div class="content">
+        <h2>Додаткова інформація</h2>
+        <p>Так же у нас существует новостной сайт...</p>
+    </div>
+</div>
+
+</body>
+</html>
