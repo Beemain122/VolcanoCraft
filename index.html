@@ -5,14 +5,14 @@
     <title>VOLCANOCRAFT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* 🎨 Здесь можно менять цвета всего сайта */
         :root {
-            --text-color: red;            /* Колір тексту */
-            --border-color: red;          /* Колір рамок */
-            --frame-bg: rgba(254,195,12,0.9); /* Фон рамок */
-            --title-color: orange;        /* Колір назви VolcanoCraft */
-            --button-bg: rgba(254,195,12,0.9); /* Фон кнопки */
-            --button-hover-bg: rgba(255,134,1,1); /* Фон кнопки при наведенні */
+            --text-color: 0, 0, 79;
+            --border-color: red;
+            --frame-bg: rgba(254,195,12,0.9);
+            --title-color: orange;
+            --button-bg: rgba(254,195,12,0.9);
+            --button-hover-bg: rgba(255,134,1,1);
+            --user-select: none;
         }
 
         body {
@@ -51,18 +51,17 @@
         }
 
         header p {
-            color: var(--text-color);
+            color: red;
             font-size: 1.8em;
             position: absolute;
             top: 50%;
-            left: 50%;
+            left: 40%;
             transform: translate(-50%, -50%);
             margin: 0;
             font-weight: bold;
             text-shadow: 2px 2px 4px black;
         }
 
-        /* Загальні стилі для рамок */
         .frame {
             background: var(--frame-bg);
             border-radius: 50px;
@@ -74,17 +73,17 @@
         }
 
         .frame-left {
-            top: -50px;
+            top: -100px;
             width: 650px;
-            height: 250px;
+            height: 450px;
             border: 8px solid var(--border-color);
             margin-top: 120px;
-            left: 300px;
+            left: 405px;
         }
 
         .frame-news {
-            top: -10px;
-            width: 600px;
+            top: -80px;
+            width: 730px;
             height: 250px;
             border-radius: 25px;
             padding: 30px;
@@ -93,7 +92,8 @@
         }
 
         .frame-button {
-            width: 600px;
+            top: -50px;
+            width: 500px;
             height: 150px;
             border-radius: 30px;
             padding: 30px;
@@ -104,7 +104,7 @@
             display: block;
             margin-bottom: 30px;
             position: relative;
-            left: 30px;
+            left: 150px;
             border: 8px solid var(--border-color);
         }
 
@@ -117,7 +117,6 @@
             margin: 1px 0;
         }
 
-        /* Верхняя рамка справа */
         .frame-right-top {
             position: absolute;
             top: 950px;
@@ -130,7 +129,6 @@
             border: 8px solid var(--border-color);
         }
 
-        /* Нижняя рамка справа */
         .frame-right-bottom {
             position: absolute;
             top: 1500px;
@@ -143,7 +141,6 @@
             border: 8px solid var(--border-color);
         }
 
-        /* НОВА рамка */
         .frame-extra {
             position: absolute;
             top: 1650px;
@@ -156,20 +153,13 @@
             border: 8px solid var(--border-color);
         }
 
-        /* Добавим отступ между заголовком и абзацем */
         .news-description {
-            margin-top: 100px; /* Отступ сверху */
+            margin-top: 100px;
         }
 
-        /* Медиазапросы для адаптивности */
         @media screen and (max-width: 768px) {
-            header h1 {
-                font-size: 3em;
-            }
-
-            header p {
-                font-size: 1.2em;
-            }
+            header h1 { font-size: 3em; }
+            header p { font-size: 1.2em; }
 
             .frame-left, .frame-news, .frame-right-top, .frame-right-bottom, .frame-extra {
                 width: 100%;
@@ -178,9 +168,8 @@
                 margin-left: 0;
                 margin-top: 20px;
             }
-            .news-description {
-                margin-top: 20px;
-            }
+
+            .news-description { margin-top: 20px; }
 
             .frame-button {
                 width: 90%;
@@ -188,12 +177,7 @@
                 margin: 20px auto;
             }
 
-            .frame-right-top, .frame-right-bottom {
-                position: relative;
-                margin-top: 20px;
-            }
-
-            .frame-extra {
+            .frame-right-top, .frame-right-bottom, .frame-extra {
                 position: relative;
                 margin-top: 20px;
             }
@@ -207,6 +191,7 @@
     <h1>VOLCANOCRAFT</h1>
     <p>Добро пожаловать на сайт сервера!</p>
 </header>
+
 <div class="frame frame-left">
     <div class="content">
         <h3>Описание сервера VolcanoCraft</h3>
@@ -217,27 +202,16 @@
             Ивенты не дают вам заскучать, а все игроки сервера автоматически становятся их участниками! 😜👍
         </p>
 
-
-        <ul><li>Заходи и играй через телефон и ПК! 💥</li></ul>
-
+        <h4>Заходи и играй через телефон и ПК! 💥</h4>
         <ul><p><li>Айпи для ПК:</li></p></ul>
-
         <ul><p><li>Версия: 1.16.5+</li></p></ul>
-
         <ul><p><li>Для телефона:</li></p></ul>
-
         <ul><p><li>Айпи:</li></p></ul>
-
         <ul><p><li>Порт:</li></p></ul>
-
         <ul><p><li>Версия:</li></p></ul>
-
-
     </div>
 </div>
 
-
-<!-- 2. Новини -->
 <div class="frame frame-news">
     <div class="content">
         <h2>О новостном канале:</h2>
@@ -246,33 +220,40 @@
     </div>
 </div>
 
-<!-- 3. Нажимна кнопка -->
-<a href="site.html" target="_blank" class="frame-button">
+<!-- 🔴 Рабочая кнопка -->
+<a href="pravela.html" target="_blank" class="frame-button">
     <div class="content">
-        <h2>Правила сервера</h2>
-        <p>Натисни сюди, щоб відкрити сторінку з правилами або додатковим контентом.</p>
+        <h1>Правила сервера</h1>
+        <p>Нажмите здесь, чтобы открыть страницу с правилами</p>
     </div>
 </a>
 
-<!-- 4. Верхняя рамка справа -->
+<a href="main.html" target="_blank" class="frame-button" style="left: 100px; top: 300px;">
+    <div class="content">
+        <h1>Привелегии</h1>
+        <p>Нажмите здесь, чтобы открыть страницу привелегий</p>
+    </div>
+</a>
+
+
 <div class="frame frame-right-top">
     <div class="content">
         <img src="photo1.jpg" alt="Фото 1" class="photo-frame">
     </div>
 </div>
 
-<!-- 5. Нижняя рамка справа -->
 <div class="frame frame-right-bottom">
     <div class="content">
         <img src="photo2.png" alt="Фото 2" class="photo-frame">
     </div>
 </div>
 
-<!-- 6. НОВА рамка -->
 <div class="frame frame-extra">
     <div class="content">
-        <h2>Додаткова інформація</h2>
-        <p>Так же у нас существует новостной сайт...</p>
+        <h2>О новостном канале:</h2>
+        <p>Так же у нас существует новостной сайт, где публикуются все новости что происходят на вулкане.
+            Такие как: Жизнь игроков, гриферство, о победителях в ивентах/квестах и многом другом!✨💫
+            Переходите сюда (ссылка) чтоб быть всегда в курсе последних новостей на вулкане!📰😱</p>
     </div>
 </div>
 
